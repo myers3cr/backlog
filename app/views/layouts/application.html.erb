@@ -12,9 +12,18 @@
     <header>
       <%= render 'layouts/navigation' %>
     </header>
-    <main role="main">
+    <main role="main" class="container">
        <%= render 'layouts/messages' %>
        <%= yield %>
     </main>
+    <footer class="container">
+      <div class="row">
+        <section class="col-sm-6">
+          Copyright © 2015 PinchPoint Systems. All rights reserved.
+        </section>
+        <section class="col-sm-6">
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
