@@ -16,6 +16,7 @@ gem 'high_voltage' # for static pages using application layout
 gem 'bootstrap-sass'
 gem 'turbolinks'
 gem 'simple_form'
+gem 'devise'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
