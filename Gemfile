@@ -17,7 +17,8 @@ gem 'bootstrap-sass'
 gem 'turbolinks'
 gem 'simple_form'
 gem 'devise'
-# the following is required for Heroky
+
+# the following is required for Heroku
 gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
