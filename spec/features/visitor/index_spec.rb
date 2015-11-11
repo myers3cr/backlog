@@ -10,7 +10,9 @@ feature 'Home Page' do
   # Then I should see "Backlog"
   scenario 'Visit the home page' do
     visit root_path
-    expect(page).to have_content 'Backlog'
+    within 'h1' do
+      expect(page).to have_content 'Welcome to Backlog'
+    end
   end
 
 # Scenario: Page must have copyright text
@@ -50,7 +52,9 @@ feature 'Home Page' do
   scenario "Access 'about' link" do
     visit root_path
     click_on 'About'
-    expect(page).to have_content 'About Backlog'
+    within 'h1' do
+      expect(page).to have_content 'About Backlog'
+    end
   end
 
 # Scenario: Access the 'Contact' page
@@ -60,7 +64,9 @@ feature 'Home Page' do
   scenario "Access 'contact' link" do
     visit root_path
     click_on 'Contact'
-    expect(page).to have_content 'Contact Backlog'
+    within 'h1' do
+      expect(page).to have_content 'Contact Backlog'
+    end
   end
 
 end
