@@ -39,9 +39,9 @@ feature 'Home Page' do
   # Given I am a returning registered user
   # When I visit the home page
   # Then I should see a link to log in
-  scenario "Access 'log in' link" do
+  scenario "Access 'sign in' link" do
     visit root_path
-    click_on 'Log in'
+    click_on 'Sign in'
     expect(page).to have_content 'Log in'
   end
 
